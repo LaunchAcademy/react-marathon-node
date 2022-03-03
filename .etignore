@@ -1,0 +1,5 @@
+# Files to ignore when uploading to Launch
+react-marathon-node.md
+node_modules/*
+client/public/bundle.js
+yarn.lock
