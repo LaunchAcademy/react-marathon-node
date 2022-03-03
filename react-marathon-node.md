@@ -38,7 +38,7 @@ By the end, our React application should look something like this:
 
 Now that we understand what our application should look like, lets get started!
 
-If you go to <http://localhost:8080>, you should see a message saying "React Music Player".
+If you go to <http://localhost:3000>, you should see a message saying "React Music Player".
 
 ![React Music Player Start Image](https://s3.amazonaws.com/horizon-production/images/react-marathon-start-image.png)
 
@@ -82,7 +82,7 @@ Now that we have our data loaded into `App.js`, let's focus on making the "Playl
 
 - First make sure it can render a header `"Playlists"` onto the page. Just to test that the component is being loaded correctly.
 
-- Now lets also make sure that the correct data is being passed down to the `PlaylistCollection` component.  Again be sure to use `debuggers` to help check this.
+- Now lets also make sure that the correct data is being passed down to the `PlaylistCollection` component. Again be sure to use `debuggers` to help check this.
 
 - By the end your screen should look something like this:
 
@@ -90,7 +90,7 @@ Now that we have our data loaded into `App.js`, let's focus on making the "Playl
 
 ### Step 3.0
 
-While our `PlaylistCollection` component will be housing the playlist data, it shouldn't be responsible for displaying a playlist's information.  Let's create a `Playlist` component that will be responsible for showing this!  
+While our `PlaylistCollection` component will be housing the playlist data, it shouldn't be responsible for displaying a playlist's information. Let's create a `Playlist` component that will be responsible for showing this!
 
 - Create one `Playlist` component and have it render "this is a playlist"
 
@@ -104,9 +104,9 @@ While our `PlaylistCollection` component will be housing the playlist data, it s
 
 Now let's make sure we can pass down a playlist's data down to one `Playlist` component.
 
-- For the time being, let's only pass down the first playlist's data to our `Playlist` component. This data will have travelled from main.js, to App, through PlaylistCollection, and finally down to our latest `Playlist` component.  
+- For the time being, let's only pass down the first playlist's data to our `Playlist` component. This data will have travelled from main.js, to App, through PlaylistCollection, and finally down to our latest `Playlist` component.
 
-- Lets update our component to  render that playlist's name on the page, so that we can confirm the data has been passed successfully.
+- Lets update our component to render that playlist's name on the page, so that we can confirm the data has been passed successfully.
 
 - By the end your screen should look something like this:
 
@@ -211,7 +211,7 @@ Our music app only really adds value if we can select a _song_ for playing. It's
 
 You'll want to make the same considerations that you made for highlighting a selected playlist.
 
-**Note:** For the moment, changing a selected playlist should NOT also change a selected song. We'll get to that later in the *Optional Steps*.
+**Note:** For the moment, changing a selected playlist should NOT also change a selected song. We'll get to that later in the _Optional Steps_.
 
 By the end of this step, your app should respond to clicking on a given song element, such that one song is highlighted at a time. The same should be true for our playlists.
 
