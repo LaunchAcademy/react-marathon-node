@@ -1,6 +1,8 @@
-import 'babel-polyfill';
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './components/App'
+import "babel-polyfill"
+import React from "react"
+import ReactDOM from "react-dom"
 
-ReactDOM.render(<App />, document.getElementById('app'))
+import App from "./components/App"
+import data from "./constants/data.js"
+
+ReactDOM.render(<App data={data} />, document.getElementById("app"))
